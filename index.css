@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Outfit", sans-serif;
+}
+.btn {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  transition: all 250ms;
+  cursor: pointer;
+}
+.wrapper {
+  background-color: #e0e8ff;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-size: 90%;
+  background-repeat: repeat-x;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 596px;
+  width: 350px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+.img-area .img1 {
+  display: block;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.text-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 24px;
+}
+.text-area h1 {
+  font-size: 28px;
+  color: #1f2e55;
+  font-weight: 700;
+  line-height: 37px;
+  padding-bottom: 17px;
+}
+.text-area .main-p {
+  color: #717fa6;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.plan {
+  background-color: #f7f9ff;
+  border-radius: 11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+}
+.plan .left {
+  display: flex;
+  align-items: center;
+}
+.left .price :nth-child(1) {
+  color: #1f2e55;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+}
+.left .price :nth-child(2){
+  color: #717FA6;
+}
+.left .music-logo {
+  padding-right: 16px;
+}
+.change {
+  font-size: 14px;
+  font-weight: 700;
+  color: #382ae1;
+  text-decoration: underline;
+}
+.change:hover {
+  color: #766cf1;
+}
+.payment {
+  width: 100%;
+  border-radius: 11px;
+  padding: 15px 0 15px 0;
+  margin: 32px 0 32px 0;
+  background-color: #382ae1;
+  box-shadow: 0px 2rem 2rem rgba(56, 42, 225, 0.190291);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+}
+.payment:hover {
+  background: #766cf1;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+}
+.cancel{
+    color: #717FA6;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 19px;
+}
+.cancel:hover{
+    color: #1F2E55;
+}
+@media screen and (max-width: 834px){
+  .wrapper{
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-size: 100%;
+  }
+}
